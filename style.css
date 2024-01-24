@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #333;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.square:hover {
+    background-color: #eee;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+input, button {
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
